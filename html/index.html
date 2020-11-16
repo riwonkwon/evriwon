@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>리원 포트폴리오</title>
+
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript">
+
+function name(a){
+  var name=prompt("작품에 어울리는 이름을 정해주세요.");
+  if(a=='first'){
+    document.getElementById('first').innerText=name;
+  }
+  else if(a=='second'){
+    document.getElementById('second').innerText=name;
+  }
+  else if(a='third'){
+    document.getElementById('third').innerText=name;
+  }
+  else if(a='fourth'){
+    document.getElementById('fourth').innerText=name;
+  }
+}
+</script>
+</head>
+<body>
+  <header>
+    <span>
+    <a href="index.html"><img src="logo.gif" width="210" height="70" alt="" class="ststic"></a>
+</span>
+
+  <nav>
+    <span><a href="page-project.html">PROJEECT</a></span>
+    <span></span><span></span>
+    <span><a href="page-contact.html">CONTACT</a></span>
+    <span><a href="page-about.html">ABOUT</a></span>
+  </nav>
+</header>
+<main>
+    <center>
+  <form action="">
+  <p><input id="username" value="" type="text" value=""> 님 안녕하세요!</p>
+  <p class="small">(작품 이름을 클릭하면 직접 이름을 정할 수 있어요)</p>
+</form>
+<br>
+<script type="text/javascript">
+  var dom=document.getElementById("username");
+  var username=prompt("당신의 이름을 알려주세요.","");
+  dom.value=username;
+</script><br>
+
+  <table>
+    <tr>
+      <td>
+  <div class="small" onclick="name('first');" id="first">디어 마이 프렌즈</div>
+</td>
+  </tr>
+
+      <tr>
+        <td>
+  <a href="./project-list/page-project1.html"><div class="hoverEffect">
+      <img src="./img/1.png" alt="Dear My Freinds" class="image">
+      <div class="txt"><h3><u>디어 마이 프렌즈</u></h3>
+        <p>제작시기: 2018년<br> 2D 포스터 디자인<br><br>jtbc 드라마, ‘디어 마이 프렌즈’ 포스터의<br>
+          리디자인이다. ‘꼰대들의 유쾌한 인생 찬가’를<br>작품의 주제 문장으로 설정하여 주인공들의<br>
+          밝고 명랑한 분위기를 표현했다.</p>
+        </div></a>
+      </div>
+    </td>
+  </tr>
+
+    <tr>
+      <td>
+  <br><br>
+  <div class="small" onclick="name('second');" id="second">정글 (JUNGLE)</a>
+  </td>
+  </tr>
+
+  <tr>
+    <td>
+  <div><a href="./project-list/page-project2.html"><div class="hoverEffect">
+  <img src="./img/2.png" alt="jungle" class="image">
+  <div class="txt">
+    <h3><u>정글</u></h3>
+        <p>제작시기: 2018년<br>
+        3D 입체 애니메이션 (C4D)<br><br>
+        ‘정글 속 개구리가 안식처에서 새로운 <br>
+        세상을 찾아 나간다’라는 동화 이야기를 <br>
+        입체적인 3d 디자인을 활용하여 표현했다</p></div>
+      </div></a>
+    </div>
+</td>
+</tr>
+
+<tr>
+  <td>
+  <br><br>
+  <div class="small" onclick="name('third');" id='third'>Nukak(누깍)</a></div>
+</td>
+</tr>
+
+<tr>
+  <td>
+  <div><a href="./project-list/page-project3.html"><div class="hoverEffect">
+  <img src="./img/3.png" alt="jungle" class="image">
+  <div class="txt"><h3><u>누깍</u></h3>
+    <p>제작시기: 2018년<br>
+    3D 입체 애니메이션 (C4D)<br><br>
+    업사이클링 브랜드 ‘Nukkak (누깍)’의 <br>
+    브랜드 이미지에 맞도록 제품을 생산하는 <br>
+    과정을 단순하게 압축하여 표현했다.</p></div>
+</div></a></div>
+</td>
+</tr>
+
+<tr>
+  <td>
+<br><br>
+<div class="small" id="name('fourth');" id='fourth'>Billy Elliot</a></div>
+</td>
+</tr>
+<tr>
+  <td>
+<div><a href="./project-list/page-project4.html"><div class="hoverEffect">
+<img src="./img/4.png" alt="Billy" class="image">
+<div class="txt"><h3><u>Billy Elliot</u></h3>
+  <p>제작시기: 2018년<br>
+    2D 포스터 디자인<br><br>
+영화 ‘빌리 엘리어트’의 포스터 리디자인이다. <br>분무기라는 오브젝트를 이용하여 자유롭고 <br>창조적인 주인공의
+모습을 표현하고자 했다. <br>배경의 문장들을 통해 위기를 극복해 나가는 <br>주인공의 태도를 엿볼 수 있다. </p></div>
+</div></a></div>
+</td>
+</tr>
+</table>
+</center>
+</main>
+
+</body>
+</html>

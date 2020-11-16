@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>contact</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+
+  <script type="text/javascript">
+  function contact(){
+      var loginForm  = document.loginForm ;
+      var userId = loginForm .userId.value;
+      var mail = loginForm .mail.value;
+
+      if(!userId || !mail){
+          alert("정보를 모두 입력해주세요.")
+      }
+      else{
+          contactForm.submit();
+      }
+  }
+  </script>
+
+</head>
+<body>
+
+  <header>
+    <span>
+    <a href="index.html"><img src="logo.gif" width="210" height="70" alt="" class="ststic"></a>
+</span>
+
+  <nav>
+    <span><a href="page-project.html">PROJEECT</a></span>
+    <span></span><span></span>
+    <span><a href="page-contact.html">CONTACT</a></span>
+    <span><a href="page-about.html">ABOUT</a></span>
+  </nav>
+</header>
+
+<main id="left">
+  <form name="loginForm" action=" "  method="post">
+
+          이름 &nbsp;&nbsp;
+          <input type="text" name="userId"><br><br>
+
+          이메일 &nbsp;&nbsp;
+          <input type="email" name="mail"><br><br>
+
+          메세지 &nbsp;&nbsp;
+          <textarea id="msg"></textarea><br><br>
+
+          <input type="button" onclick="contact()" value="확인">
+  </form>
+</main>
+
+<footer></footer>
+</body>
+</html>
